@@ -1,0 +1,14 @@
+import os
+import shutil
+
+def copy_folder(source_folder, destination_folder):
+    if os.path.exists(source_folder):
+        shutil.copytree(source_folder, destination_folder, dirs_exist_ok=True)
+        print(f"Papka {source_folder} {destination_folder} ga nusxalandi.")
+    else:
+        print(f"Manba papkasi {source_folder} topilmadi.")
+
+source_folder = r"D:\Islomjon\yangi"
+destination_folder = r"D:\Men_bekorchiman"
+
+copy_folder(source_folder, destination_folder)

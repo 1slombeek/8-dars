@@ -1,0 +1,13 @@
+import shutil
+import os
+
+def delete_folder(folder_path):
+    if os.path.exists(folder_path):
+        shutil.rmtree(folder_path)
+        print(f"Papka {folder_path} va uning ichidagi fayllar o'chirildi.")
+    else:
+        print(f"Papka {folder_path} topilmadi.")
+
+folder_to_delete = r"D:\Men_bekorchiman\dars"
+
+delete_folder(folder_to_delete)

@@ -1,0 +1,31 @@
+import os
+def ochish():
+    a=r"D:\Men_bekorchiman\1"
+    b = r"D:\Men_bekorchiman\2"
+    c = r"D:\Men_bekorchiman\3"
+    d = r"D:\Men_bekorchiman\4"
+    if not os.path.exists(a):
+        os.makedirs(a)
+        print(f"Papka {a} yaratildi.")
+    else:
+        print(f"Papka {a} allaqachon bor.")
+
+    if not os.path.exists(b):
+        os.makedirs(b)
+        print(f"Papka {b} yaratildi.")
+    else:
+        print(f"Papka {b} allaqachon bor.")
+
+    if not os.path.exists(c):
+        os.makedirs(c)
+        print(f"Papka {c} yaratildi.")
+    else:
+        print(f"Papka {c} allaqachon bor.")
+
+    if not os.path.exists(d):
+        os.makedirs(d)
+        print(f"Papka {d} yaratildi.")
+    else:
+        print(f"Papka {d} allaqachon bor.")
+
+ochish()

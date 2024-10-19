@@ -1,0 +1,11 @@
+import os
+
+def count_folders_in_directory(directory_path):
+    if os.path.exists(directory_path):
+        folders = [f for f in os.listdir(directory_path) if os.path.isdir(os.path.join(directory_path, f))]
+        print(f"Papkada {len(folders)} ta papka mavjud.")
+    else:
+        print(f"Papka {directory_path} topilmadi.")
+directory_to_check = r"D:\1"
+
+count_folders_in_directory(directory_to_check)

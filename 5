@@ -1,0 +1,12 @@
+import os
+
+def delete_file(file_path):
+    if os.path.exists(file_path):
+        os.remove(file_path)
+        print(f"Fayl {file_path} o'chirildi.")
+    else:
+        print(f"Fayl {file_path} topilmadi.")
+
+file_to_delete = r"D:\1\fayl_matn4.py"
+
+delete_file(file_to_delete)

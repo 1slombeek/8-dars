@@ -1,0 +1,12 @@
+import os
+
+def count_files_in_folder(folder_path):
+    if os.path.exists(folder_path):
+        files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
+        print(f"Papkada {len(files)} ta fayl mavjud.")
+    else:
+        print(f"Papka {folder_path} topilmadi.")
+
+folder_to_check = r"D:\Men_bekorchiman"
+
+count_files_in_folder(folder_to_check)

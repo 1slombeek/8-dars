@@ -1,0 +1,16 @@
+import os
+
+def delete_empty_folder(folder_path):
+    if os.path.exists(folder_path) and not os.listdir(folder_path):
+        os.rmdir(folder_path)
+        print(f"Bo'sh papka {folder_path} o'chirildi.")
+    else:
+        if not os.path.exists(folder_path):
+            print(f"Papka {folder_path} topilmadi.")
+        else:
+            print(f"Papka {folder_path} bo'sh emas, o'chirib bo'lmaydi.")
+
+folder_to_delete = r"D:\1\2"
+
+
+delete_empty_folder(folder_to_delete)
